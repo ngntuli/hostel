@@ -1,1 +1,1 @@
-# hostel-management-system
+# hostel
