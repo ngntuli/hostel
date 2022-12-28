@@ -11,7 +11,7 @@ public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private Date month;
+    private Date date;
     private double amount;
 
     public Long getId() {
@@ -22,12 +22,12 @@ public class Payment {
         this.id = id;
     }
 
-    public Date getMonth() {
-        return month;
+    public Date getDate() {
+        return date;
     }
 
-    public void setMonth(Date month) {
-        this.month = month;
+    public void setDate(Date month) {
+        this.date = month;
     }
 
     public double getAmount() {
