@@ -1,5 +1,6 @@
 package com.ngntuli.hostel.models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -9,6 +10,7 @@ import java.util.Date;
 public class Payment {
     @Id
     @GeneratedValue
+    @Column(name = "PAYMENT_ID")
     private Long id;
     private Date date;
     private double amount;
