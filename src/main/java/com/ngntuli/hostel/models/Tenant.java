@@ -8,11 +8,12 @@ public class Tenant {
 
     @Id
     @GeneratedValue
+    @Column(name = "TENANT_ID")
     private Long id;
     private String name;
     private int room;
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "TENANT_ID")
     @OrderBy
     private Set<Payment> payments;
 
