@@ -11,6 +11,7 @@ public class Tenant {
     @Column(name = "TENANT_ID")
     private Long id;
     private String name;
+    @Column(name = "ROOM_NO")
     private int room;
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "TENANT_ID")
