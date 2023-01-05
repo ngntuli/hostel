@@ -11,7 +11,7 @@ import java.util.Set;
 public class Tenant {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "TENANT_ID")
     private Long id;
     private String name;
