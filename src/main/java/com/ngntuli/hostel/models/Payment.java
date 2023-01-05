@@ -41,4 +41,12 @@ public class Payment {
     public void setAmount(double amount) {
         this.amount = amount;
     }
+
+    public Tenant getTenant() {
+        return tenant;
+    }
+
+    public void setTenant(Tenant tenant) {
+        this.tenant = tenant;
+    }
 }
