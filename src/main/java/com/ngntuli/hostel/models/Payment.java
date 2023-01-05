@@ -14,6 +14,9 @@ public class Payment {
     private Long id;
     private Date date;
     private double amount;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "tenant")
+    private Tenant tenant;
 
     public Long getId() {
         return id;
