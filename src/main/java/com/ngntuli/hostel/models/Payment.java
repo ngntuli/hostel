@@ -12,6 +12,7 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "PAYMENT_ID")
     private Long id;
+    @Column(name = "PAID_DATE")
     private Date date;
     private double amount;
     @ManyToOne(fetch = FetchType.LAZY)
