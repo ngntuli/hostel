@@ -9,7 +9,7 @@ import java.util.Date;
 @Entity
 public class Payment {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "PAYMENT_ID")
     private Long id;
     private Date date;
