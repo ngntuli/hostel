@@ -14,6 +14,7 @@ public class Payment {
     private Long id;
     @Column(name = "PAID_DATE")
     private Date date;
+    @Column(name = "AMOUNT")
     private double amount;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "tenant")
