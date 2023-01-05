@@ -14,6 +14,7 @@ public class Tenant {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "TENANT_ID")
     private Long id;
+    @Column(name = "TENANT_NAME")
     private String name;
     @Column(name = "ROOM_NO")
     private int room;
